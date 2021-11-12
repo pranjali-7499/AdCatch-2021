@@ -1,0 +1,134 @@
+*{
+    margin: 0px;
+}
+.topnav{
+    margin: 0px;
+    display: flex;
+    background-color: rgb(211, 226, 243);
+   }
+#logo{
+   color: #041420;
+   font-size: 3rem;
+   font-family: 'Staatliches', cursive;
+   margin-left: 2rem;
+   }
+.menu{
+    margin-left: 30px;
+}
+.main-buttons{
+    width:160px;
+    background-color: rgb(207, 221, 247);
+    height: 60px;
+    border: rgb(95, 95, 248) solid 2px;
+    cursor: pointer;
+}
+#active-button{
+    background-color: darkblue;
+    color: white;
+
+}
+.user-icon{
+    margin-left: 500px;
+    display: flex;
+    align-items: center;
+}
+.search-box{
+    height: 25px;
+    border-radius: 20px;
+    width: 300px;
+    margin: 25px;
+    padding: 3px;
+    margin-left: 60px;
+}
+
+.inside-buttons{
+    border-radius: 30px;
+    background-color: mediumpurple;
+    line-height: 40px;
+    width: 200px;
+    border: none;
+    float: right;
+    margin: 25px;
+    padding: 3px;
+    margin-right: 100px;
+    color: white;
+    cursor: pointer;
+}
+
+table, td, th {  
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  table {
+    border-collapse: collapse;
+    width: 90%;
+  }
+
+  th, td {
+    padding: 15px;
+  }
+  .tabels{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+
+  }
+
+  #page-title{
+      margin: 15px;
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+      font-family: 'Poppins', sans-serif;
+  }
+  #back-button{
+      background-color: white;
+      border: none;
+      background-image: url("../img/outline_arrow_back_black_24dp.png");
+      background-repeat: no-repeat;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+  }
+
+  .section-file{
+      display: flex;
+      flex-direction: column;
+      border: blue 2px solid;
+      background-color: rgb(241, 247, 250);
+      padding: 50px;
+      align-items: center;
+      width: 80%;
+      margin: auto;
+      font-family: 'Poppins', sans-serif;
+  }
+  .lu{
+      font-size: 15px;
+      padding: 10px;
+      margin: 20px;
+  }
+
+  .iu{
+      font-size: 15px;
+      color: rgb(20, 83, 220);
+      height: 20px;
+  }
+
+  .tagcloud h3{
+      margin: 15px 0px 15px 30px;
+
+  }
+ .cloud{
+     display: flex;
+     margin: 5px;
+     margin-left: 30px;
+     flex-direction: row;
+ }
+ .cloud img{
+     width: 300px;
+     border: solid 2px black;
+ }
+ .tagsec{
+     margin: 25px;
+ }

@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} AdCatch | AllMedia {% endblock %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static '/css/style2.css' %}" type="text/css" />
+{% endblock %}
+
+{% block content %}
+	
+ <div class="topnav">
+        <span id="logo">
+            <p style="margin-top: 0px; margin-bottom: 0px;">AD CATCH</p>
+        </span>
+        <div class="menu">
+            <a href="all media.html"><button type="button" class="main-buttons">All Media</button></a>
+            <a href="MyProjects.html"><button type="button" class="main-buttons" id="active-button">My
+                    Projects</button></a>
+            <button type="button" class="main-buttons">Deployed</button>
+
+
+        </div>
+        <div class="user-icon">
+            <img src='{%static 'img/avatardefault_92824.png' %}' height="40px">
+        </div>
+    </div>
+    <div id="page-title">
+        <button onclick="goBack()" id="back-button"></button>
+        <span>My Project 1</span>
+    </div>
+    <div class="tagcloud">
+        <h3>Tag Clouds</h3>
+        <div class="cloud">
+            <div class="tagsec">
+                <h4>Movie 1</h4>
+                <img src='{% static 'img/wordcloud_menti.png' %}'>
+            </div>
+            <div class="tagsec">
+                <h4>Movie 1</h4>
+                <img src='{% static 'img/wordcloud_menti.png' %}'>
+            </div>
+            <div class="tagsec">
+                <h4>Movie 1</h4>
+                <img src='{% static 'img/wordcloud_menti.png' %}'>
+            </div>
+           
+        </div>
+        <div class="tabels">
+            <table>
+                <tr>
+                <th>Video Name</th>
+                <th>Commercial Name</th>
+                <th>Match Score</th>
+                <th>Merge and Deploy</th>
+                </tr>
+                <tr>
+                    <td>Video Name</td>
+                    <td>Type</td>
+                    <td>Status</td>
+                    <td>Tags</td>
+                    </tr>
+    
+            </table>
+        </div>
+    </div>     
+{% endblock %}
+
+
+
+

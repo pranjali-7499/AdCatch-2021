@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} AdCatch | AllMedia {% endblock %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static '/css/style2.css' %}" type="text/css" />
+{% endblock %}
+
+{% block content %}
+	
+    <div class="topnav">
+        <span id="logo">
+            <p style="margin-top: 0px; margin-bottom: 0px;">AD CATCH</p>
+        </span>
+        <div class="menu">
+            <a href="all media.html"><button type="button" class="main-buttons" id="active-button">All Media</button></a>
+            <a href="MyProjects.html"><button type="button" class="main-buttons">My Projects</button></a>
+            <button type="button" class="main-buttons">Deployed</button>
+
+
+        </div>
+        <div class="user-icon">
+            <img src='{%static 'img/avatardefault_92824.png' %}'height="40px">
+        </div>
+    </div>
+    <div id="page-title">
+        <button onclick="goBack()" id="back-button"></button>
+        <span>Upload Files</span>
+    </div>
+    <div class="section-file">
+        <form action="" method="post" enctype="multipart/form-data">{% csrf_token %}
+            <div>
+            <label for="videoname" class="lu">Video Name</label>
+            <input type="text" placeholder="Title for video" class="iu"  name='videoname'></div>
+            <div><br>
+            <label for="videoname"class="lu">Video Type</label>
+            <select id="cars" name="videotype" style="height: 25px; padding: 2px; margin: 2px; font-size: 10px;">
+                <option value="Commercial" class="iu">Commercial</option>
+                <option value="Media file"class="iu">Media File</option>
+                </select></div><br>
+                <div>
+                    <label for="choosefile"class="lu">Select a file from your system</label>
+            <input type="file" id="myFile" name="filename"></div>
+            <input type="submit" class="inside-buttons" style="margin: 25px; float: none;">
+        </form>
+    </div>     
+{% endblock %}
+
+
+
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>All Media</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Staatliches&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <script src="js/main.js"></script>
+
+</head>
+
+<body>
+    <div class="topnav">
+        <span id="logo">
+            <p style="margin-top: 0px; margin-bottom: 0px;">AD CATCH</p>
+        </span>
+        <div class="menu">
+            <a href="all media.html"><button type="button" class="main-buttons" id="active-button">All Media</button></a>
+            <a href="MyProjects.html"><button type="button" class="main-buttons">My Projects</button></a>
+            <button type="button" class="main-buttons">Deployed</button>
+
+
+        </div>
+        <div class="user-icon">
+            <img src='{%static 'img/avatardefault_92824.png' %}'height="40px">
+        </div>
+    </div>
+    <div id="page-title">
+        <button onclick="goBack()" id="back-button"></button>
+        <span>Upload Files</span>
+    </div>
+    <div class="section-file">
+        <form action="/action_page.php">
+            <div>
+            <label for="videoname" class="lu">Video Name</label>
+            <input type="text" placeholder="Title for video" class="iu"></div>
+            <div><br>
+            <label for="videoname"class="lu">Video Type</label>
+            <select id="cars" name="cars" style="height: 25px; padding: 2px; margin: 2px; font-size: 10px;">
+                <option value="volvo" class="iu">Commercial</option>
+                <option value="saab"class="iu">Media File</option>
+                </select></div><br>
+                <div>
+                    <label for="choosefile"class="lu">Select a file from your system</label>
+            <input type="file" id="myFile" name="filename"></div>
+            <input type="submit" class="inside-buttons" style="margin: 25px; float: none;">
+        </form>
+    </div>
+</body>
+
+</html>

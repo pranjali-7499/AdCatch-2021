@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} AdCatch | Home {% endblock %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static '/css/style.css' %}" type="text/css" />
+{% endblock %}
+
+{% block content %}
+	
+ <div class="bgimage">
+        <div class="topnav">
+            <div id="logo">
+                <p>AD CATCH</p>
+            </div>
+        </div>
+
+        <div class="loginbox">
+            <p class="headings">Login</p>
+            <form action="action.php">
+                <div class="forms">
+                <div><label for="email">Email</label></div>
+                <div><input type="text" id="Sender" name="lastname" placeholder="Email" class="placehold" required></div>
+                    </div>
+                    <div class="forms">
+                <div><label for="password" >Password</label></div>
+                <div><input type="password" id="password" placeholder="Password" class="placehold" required></div>
+                <p style="float: right; color: #2f46a4; margin-top: 2px;">Forgot password?</p>
+            </div>             
+                <input class="btn" type="submit" onclick=""></input>
+            </form>
+            <p style="justify-content: center; display: flex; color: #2f46a4; margin-top: 2px;">New here? <a>Signup</a></p>
+
+        </div>      
+{% endblock %}
+{%block script%}
+        <script src="" async defer></script>
+{% endblock %}
+

@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} AdCatch | AllMedia {% endblock %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static '/css/style2.css' %}" type="text/css" />
+{% endblock %}
+
+{% block content %}
+	
+ <div class="topnav">
+        <span id="logo">
+            <p style="margin-top: 0px; margin-bottom: 0px;">AD CATCH</p>
+        </span>
+        <div class="menu">
+            <a href="all media.html"><button type="button" class="main-buttons" id="active-button">All Media</button></a>
+            <a href="MyProjects.html"><button type="button" class="main-buttons">My Projects</button></a>
+            <button type="button" class="main-buttons">Deployed</button>
+
+        </div>
+        <div class="user-icon">
+            <img src='{%static 'img/avatardefault_92824.png' %}'height="40px">
+        </div>
+    </div>
+    <div>
+        <input type="text" placeholder="Search..." class="search-box">
+        <a href="uploadfile.html"><button type="button" class="inside-buttons">Upload File</button></a>
+    </div>
+    <div class="tabels">
+        <table>
+            <tr>
+            <th>Video Name</th>
+            <th>Type</th>
+            <th>Status</th>
+            <th>Tags</th>
+            <th>Upload date</th>
+            </tr>
+            <tr>
+                <td>Video Name</td>
+                <td>Type</td>
+                <td>Status</td>
+                <td>Tags</td>
+                <td>Upload date</td>
+                </tr>
+
+        </table>
+    </div     
+{% endblock %}
+
+
+
+

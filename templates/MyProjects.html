@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} AdCatch | MyProjects {% endblock %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static '/css/style2.css' %}" type="text/css" />
+{% endblock %}
+
+{% block content %}
+	
+ <div class="topnav">
+        <span id="logo">
+            <p style="margin-top: 0px; margin-bottom: 0px;">AD CATCH</p>
+        </span>
+        <div class="menu">
+            <a href="all media.html"><button type="button" class="main-buttons" >All Media</button></a>
+            <button type="button" class="main-buttons"id="active-button">My Projects</button>
+            <button type="button" class="main-buttons">Deployed</button>
+
+        </div>
+        <div class="user-icon">
+            <img src='{%static 'img/avatardefault_92824.png' %}'height="40px">
+        </div>
+    </div>
+    <div>
+        <input type="text" placeholder="Search..." class="search-box">
+        <a href=".html"><button type="button" class="inside-buttons">New Project</button></a>
+    </div>
+    <div class="tabels">
+        <table>
+            <tr>
+            <th>Project Name</th>
+            <th>Action</th>
+            </tr>
+            <tr>
+                <td>Project Name</td>
+                <td>Delete</td>
+                </tr>
+
+        </table>
+    </div>     
+{% endblock %}
+
+
+
