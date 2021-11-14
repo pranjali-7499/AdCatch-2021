@@ -43,6 +43,12 @@ def file(request, id):
 def home(request):
     return render(request, 'index.html')
 
+def Sign_In(request):
+    return render(request, 'signin.html')
+
+def Sign_Up(request):
+    return render(request, 'signup.html')
+
 def MyProject(request):
     return render(request, 'MyProjects.html')
 

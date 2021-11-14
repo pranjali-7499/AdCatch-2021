@@ -8,18 +8,20 @@ from django.conf.urls.static import static
 
 from Project import views
 
+app_name='Project'
 urlpatterns = [
-    url(r'^upload$', views.TestUploadView.as_view()),
+    url(r'^upload$', views.TestUploadView.as_view(),name="TestUploadView"),
     url(r'^upload/success',
         TemplateView.as_view(template_name="all media.html"),
         name='upload_success'),
     url(r'^file/(?P<id>[0-9]+)$', views.file),
     path('',views.home,name='home'),
-    path('my_projects',views.MyProject,name='my_projects'),
-    path('resultmyproject',views.ResultMyProject,name='resultmyproject'),
-    path('newproject',views.NewProject,name='newproject'),
-    path('resultmyproject',views.ResultMyProject,name='resultmyproject'),
-    path('all media',views.All_Media,name='all media'),
+    path('my_projects/',views.MyProject,name='MyProject'),
+    path('newproject/',views.NewProject,name='NewProject'),
+    path('resultmyproject/',views.ResultMyProject,name='ResultMyProject'),
+    path('all media/',views.All_Media,name='All_Media'),
+    path('signin/',views.Sign_In,name='Sign_In'),
+    path('signup/',views.Sign_Up,name='Sign_Up'),
     
 ]
 

@@ -14,24 +14,20 @@
                 <p>AD CATCH</p>
             </div>
         </div>
-
-        <div class="loginbox">
-            <p class="headings">Login</p>
-            <form action="action.php">
-                <div class="forms">
-                <div><label for="email">Email</label></div>
-                <div><input type="text" id="Sender" name="lastname" placeholder="Email" class="placehold" required></div>
-                    </div>
-                    <div class="forms">
-                <div><label for="password" >Password</label></div>
-                <div><input type="password" id="password" placeholder="Password" class="placehold" required></div>
-                <p style="float: right; color: #2f46a4; margin-top: 2px;">Forgot password?</p>
-            </div>             
-                <input class="btn" type="submit" onclick=""></input>
-            </form>
-            <p style="justify-content: center; display: flex; color: #2f46a4; margin-top: 2px;">New here? <a>Signup</a></p>
-
-        </div>      
+        <div class="rightnav">
+           <div id="head">
+               <p>Discover The<br>Right AD At The<br>Right Time<br></p>
+           </div>
+           <div id="head1">
+               <p>AdCatch is a great Platform for processing content<br>
+                of Media and Commercials.It provides the storage at cloud<br>to store your data and help you to discover
+                the right Ad<br>for your Media through best Matching Score.</p>
+           </div>
+           <a class='btn1' href={% url 'Project:Sign_In' %}>Sign In</a>
+           <a class='btn1' href={% url 'Project:Sign_Up' %}>Sign Up</a>
+        </div>
+ </div>
+        
 {% endblock %}
 {%block script%}
         <script src="" async defer></script>

@@ -13,8 +13,8 @@
             <p style="margin-top: 0px; margin-bottom: 0px;">AD CATCH</p>
         </span>
         <div class="menu">
-            <a href="all media.html"><button type="button" class="main-buttons" >All Media</button></a>
-            <button type="button" class="main-buttons"id="active-button">My Projects</button>
+            <a href={% url 'Project:All_Media' %}><button type="button" class="main-buttons" >All Media</button></a>
+            <a href={% url 'Project:MyProject' %}><button type="button" class="main-buttons" id="active-button">My Projects</button></a>
             <button type="button" class="main-buttons">Deployed</button>
 
         </div>
@@ -24,7 +24,7 @@
     </div>
     <div>
         <input type="text" placeholder="Search..." class="search-box">
-        <a href=".html"><button type="button" class="inside-buttons">New Project</button></a>
+        <a href={% url 'Project:NewProject' %}><button type="button" class="inside-buttons">New Project</button></a>
     </div>
     <div class="tabels">
         <table>

@@ -80,7 +80,7 @@ table, td, th {
       display: flex;
       align-items: center;
       font-size: 20px;
-      font-family: 'Poppins', sans-serif;
+      font-family:sans-serif;
   }
   #back-button{
       background-color: white;
@@ -101,7 +101,7 @@ table, td, th {
       align-items: center;
       width: 80%;
       margin: auto;
-      font-family: 'Poppins', sans-serif;
+      font-family: sans-serif;
   }
   .lu{
       font-size: 15px;
