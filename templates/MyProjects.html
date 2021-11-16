@@ -1,28 +1,37 @@
-{% extends 'base.html' %}
-{% load static %}
-{% block title %} AdCatch | MyProjects {% endblock %}
+<!DOCTYPE html>
 
-{% block style %}
-<link rel="stylesheet" href="{% static '/css/style2.css' %}" type="text/css" />
-{% endblock %}
+<html>
 
-{% block content %}
-	
- <div class="topnav">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>All Media</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Staatliches&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="topnav">
         <span id="logo">
             <p style="margin-top: 0px; margin-bottom: 0px;">AD CATCH</p>
         </span>
         <div class="menu">
-            <a href={% url 'Project:All_Media' %}><button type="button" class="main-buttons" >All Media</button></a>
-            <a href={% url 'Project:MyProject' %}><button type="button" class="main-buttons" id="active-button">My Projects</button></a>
-            <button type="button" class="main-buttons">Deployed</button>
+            <a href="all media.html"><button type="button" class="main-buttons">All Media</button></a>
+            <a href="MyProjects.html"><button type="button" class="main-buttons" id="active-button">My Projects</button></a>
+            <a href="deployed.html"><button type="button" class="main-buttons">Deployed</button></a>
 
         </div>
         <div class="user-icon">
-            <img src='{%static 'img/avatardefault_92824.png' %}'height="40px">
+            <img src="img/avatardefault_92824.png" height="40px">
         </div>
     </div>
- 
+
     <div>
         <input type="text" placeholder="Search..." class="search-box">
         <button type="button" class="inside-buttons" id="myBtn">New Project</button>
@@ -36,20 +45,21 @@
             </div>
         </div>
     </div>
+
     <div class="tabels">
         <table>
             <tr>
-            <th>Project Name</th>
-            <th>Action</th>
+                <th>Project Name</th>
+                <th>Action</th>
             </tr>
             <tr>
                 <td>Project Name</td>
                 <td>Delete</td>
-                </tr>
+            </tr>
 
         </table>
-    </div>     
-{% endblock %}
+    </div>
+</body>
+<script src="js/main.js"></script>
 
-
-
+</html>
