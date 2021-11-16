@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>All Media</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Staatliches&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <script src="js/main.js"></script>
+
+</head>
+
+<body>
+    <div class="topnav">
+        <span id="logo">
+            <p style="margin-top: 0px; margin-bottom: 0px;">AD CATCH</p>
+        </span>
+        <div class="menu">
+            <a href="all media.html"><button type="button" class="main-buttons" id="active-button">All
+                    Media</button></a>
+            <a href="MyProjects.html"><button type="button" class="main-buttons">My Projects</button></a>
+            <button type="button" class="main-buttons">Deployed</button>
+
+
+        </div>
+        <div class="user-icon">
+            <img src="img/avatardefault_92824.png" height="40px">
+        </div>
+    </div>
+    <div id="page-title">
+        <button onclick="goBack()" id="back-button"></button>
+        <span>New Project</span>
+        <button type="button" class="inside-buttons" id="myBtn">New Project</button>
+
+    </div>
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'London')">Media Files</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Commercials</button>
+    </div>
+
+    <!-- Tab content -->
+    <div id="London" class="tabcontent">
+        <h3>Select media Files</h3>
+        <div class="tabels">
+            <table>
+                <tr>
+                    <th>Video Name</th>
+                    <th>Type</th>
+                    <th>Status</th>
+                    <th>Tags</th>
+                    <th>Upload date</th>
+                </tr>
+                <tr>
+                    <td><input type="checkbox">&nbsp &nbspVideo Name</td>
+                    <td>Video Name</td>
+                    <td>Status</td>
+                    <td>Tags</td>
+                    <td>Upload date</td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+    <div id="Paris" class="tabcontent">
+        <h3>Select Commercials</h3>
+        <div class="tabels">
+            <table>
+                <tr>
+                    <th>Video Name</th>
+                    <th>Type</th>
+                    <th>Status</th>
+                    <th>Tags</th>
+                    <th>Upload date</th>
+                </tr>
+                <tr>
+                    <td><input type="checkbox">&nbsp &nbspVideo Name</td>
+                    <td>Video Name</td>
+                    <td>Status</td>
+                    <td>Tags</td>
+                    <td>Upload date</td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
